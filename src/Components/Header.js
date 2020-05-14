@@ -1,0 +1,46 @@
+import React  from 'react';
+import '../App.css';
+
+
+export function Header() {
+  function showModalWin() {
+ 
+    var darkLayer = document.createElement('div'); // слой затемнения
+    darkLayer.id = 'shadow'; // id чтобы подхватить стиль
+    document.body.appendChild(darkLayer); // включаем затемнение
+
+    var modalWin = document.getElementById('popupWin'); // находим наше "окно"
+    modalWin.style.display = 'block'; // "включаем" его
+
+    darkLayer.onclick = function () {  // при клике на слой затемнения все исчезнет
+        darkLayer.parentNode.removeChild(darkLayer); // удаляем затемнение
+        modalWin.style.display = 'none'; // делаем окно невидимым
+        return false;
+    };
+}
+  
+  return (
+    <div>
+      <div className="headback">
+        <div className="head">
+            <div className="help logohead">
+                <div>Logo</div>
+            </div>
+            <div className="help headblock">
+                <div className="help entryhead">
+                  <button title="knopka" 
+                  onClick={() => showModalWin()}>
+                  Knopka
+                  </button>
+                </div>
+                <div className="help baskethead">
+                  basket
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+

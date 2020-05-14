@@ -1,0 +1,162 @@
+.App {
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.navigation {
+width: 500px;
+
+}
+.head{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
+  height: 40px;
+}
+.help {
+  background-color: white;
+  border: 1px dashed green;
+}
+.headback{
+  background-color: lightskyblue;
+}
+.logohead{
+  min-width: 100px;
+}
+.entryhead{
+  width: 50px;
+}
+.baskethead{
+  width: 100px;
+}
+.headblock{
+  display: flex;
+}
+.searchback{
+  background-color: lightslategrey;
+  height: 50px;
+}
+.searchblock{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+.search{
+  box-sizing: content-box;
+  min-width: 200px;
+  width: 80%;
+}
+.searchplace{
+  flex-grow: 1;
+  margin-right: 10%;
+  max-width: 1000px;
+}
+.buttonmenu{
+  margin-left: 10%;
+}
+
+.listofgood{
+  display: flex;
+  justify-content: stretch;
+  flex-direction: column;
+  align-items: stretch;
+  flex-wrap: wrap;
+  
+}
+.good{
+  background-color: white;
+  margin: 10px;
+  height: 150px;
+  border: 1px solid blueviolet;
+  
+}
+.containerforgood{
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+.footerback{
+  background-color: lightslategray;
+  height: 100px;
+  width: 100%;
+}
+.name_goods{
+  color: black;
+  height: 100px;
+  width: 100px;
+  margin-top: 50px;
+}
+.price_goods{
+  color: black;
+  height: 100px;
+  width: 100px;
+  margin-top: 50px;
+}
+.goodcard{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  
+}
+.buttonEntry{
+  display: flex;
+}
+.formentry{
+  width: 200px;
+  height: 200px;
+  position: fixed;
+  background-color: lightcyan;
+  border: 2px solid tomato;
+  display: none;
+  z-index: 3;
+}
+.containerentry{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  
+}
+
+#shadow { 
+  position: fixed;
+  width:100%;
+  height:100%;
+  z-index:2; 
+  background:#000;
+  opacity: .5;
+  left:0;
+  top:0;
+
+}
